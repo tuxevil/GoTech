@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A8B0893-5416-44A8-9756-C41EE74A03C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RestoBar_Manager.My.MyApplication</StartupObject>
+    <RootNamespace>RestoBar_Manager</RootNamespace>
+    <AssemblyName>RestoBar Manager</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RestoBar Manager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RestoBar Manager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminClave.Designer.vb">
+      <DependentUpon>AdminClave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminClave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminClave2.Designer.vb">
+      <DependentUpon>AdminClave2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminClave2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_baradmin.vb" />
+    <Compile Include="dsFormaConsumo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFormaConsumo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsFormaPago.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFormaPago.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMesa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMesa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMesero.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMesero.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTarjetas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTarjetas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mod-Productos.Designer.vb">
+      <DependentUpon>Mod-Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mod-Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar.Designer.vb">
+      <DependentUpon>Modificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reportes.designer.vb">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesAdmin.Designer.vb">
+      <DependentUpon>ReportesAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservas.vb" />
+    <Compile Include="ReservasCanchas.Designer.vb">
+      <DependentUpon>ReservasCanchas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReservasCanchas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpVentasRes.Designer.vb">
+      <DependentUpon>rpVentasRes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpVentasRes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ticket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ticket2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ticket2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VentasRestaurant.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VentasRestaurant.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminClave.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminClave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminClave2.resx">
+      <DependentUpon>AdminClave2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mod-Productos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Mod-Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar.resx">
+      <DependentUpon>Modificar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesAdmin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportesAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservasCanchas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReservasCanchas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpVentasRes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rpVentasRes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ticket.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ticket2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentasRestaurant.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VentasRestaurant.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="dsFormaConsumo.xsc">
+      <DependentUpon>dsFormaConsumo.xsd</DependentUpon>
+    </None>
+    <None Include="dsFormaConsumo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFormaConsumo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsFormaConsumo.xss">
+      <DependentUpon>dsFormaConsumo.xsd</DependentUpon>
+    </None>
+    <None Include="dsFormaPago.xsc">
+      <DependentUpon>dsFormaPago.xsd</DependentUpon>
+    </None>
+    <None Include="dsFormaPago.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFormaPago.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsFormaPago.xss">
+      <DependentUpon>dsFormaPago.xsd</DependentUpon>
+    </None>
+    <None Include="dsMesa.xsc">
+      <DependentUpon>dsMesa.xsd</DependentUpon>
+    </None>
+    <None Include="dsMesa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMesa.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMesa.xss">
+      <DependentUpon>dsMesa.xsd</DependentUpon>
+    </None>
+    <None Include="dsMesero.xsc">
+      <DependentUpon>dsMesero.xsd</DependentUpon>
+    </None>
+    <None Include="dsMesero.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMesero.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMesero.xss">
+      <DependentUpon>dsMesero.xsd</DependentUpon>
+    </None>
+    <None Include="dsTarjetas.xsc">
+      <DependentUpon>dsTarjetas.xsd</DependentUpon>
+    </None>
+    <None Include="dsTarjetas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTarjetas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsTarjetas.xss">
+      <DependentUpon>dsTarjetas.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
